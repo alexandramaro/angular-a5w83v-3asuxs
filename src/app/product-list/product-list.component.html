@@ -1,4 +1,4 @@
-<h2>Produtos</h2>
+<h2>Products</h2>
 
 <div *ngFor="let product of products">
   <h3>
@@ -12,9 +12,9 @@
 
   <!-- . . . -->
 
-  <p *ngIf="product.description">Descrição: {{ product.description }}</p>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
 
-  <button type="button" (click)="share()">Compartilhar</button>
+  <button type="button" (click)="share()">Share</button>
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
