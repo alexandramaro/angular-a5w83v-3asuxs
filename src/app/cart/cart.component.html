@@ -11,14 +11,32 @@
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
   <div>
-    <label for="name"> Name </label>
+    <label for="name"> 
+      Name 
+    </label>
     <input id="name" type="text" formControlName="name" />
   </div>
 
   <div>
-    <label for="address"> Address </label>
+    <label for="address"> 
+      Address 
+    </label>
     <input id="address" type="text" formControlName="address" />
   </div>
 
-  <button class="button" type="submit">Buy</button>
+  <div>
+  <label for="codpostal"> 
+    Postal Code 
+  </label>
+  <input id="codpostal" type="text" formControlName="codpostal" />
+</div>
+
+<div>
+  <label for="localidade"> 
+    Location 
+  </label>
+  <input id="localidade" type="text" formControlName="localidade" />
+</div>
+
+  <button class="button" type="submit">Purchase</button>
 </form>
